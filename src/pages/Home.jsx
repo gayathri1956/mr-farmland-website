@@ -2,15 +2,11 @@ function Home() {
 
   return (
 
-    <div className="bg-[#021b12] text-white min-h-screen overflow-hidden">
+    <div className="bg-[#021b12] text-white overflow-hidden">
 
       {/* Hero Section */}
 
-      <div className="relative min-h-screen pt-28 flex items-center px-10 md:px-20">
-
-        {/* Background Overlay */}
-
-        <div className="absolute inset-0 bg-black/50 z-0"></div>
+      <div className="relative min-h-screen pt-40 flex items-center px-6 md:px-20">
 
         {/* Background Image */}
 
@@ -20,7 +16,11 @@ function Home() {
           className="absolute inset-0 w-full h-full object-cover"
         />
 
-        {/* Hero Content */}
+        {/* Dark Overlay */}
+
+        <div className="absolute inset-0 bg-black/60"></div>
+
+        {/* Content */}
 
         <div className="relative z-10 max-w-4xl">
 
@@ -30,7 +30,7 @@ function Home() {
 
           </p>
 
-          <h1 className="text-5xl md:text-7xl font-semibold leading-tight mb-8">
+          <h1 className="text-4xl md:text-6xl font-bold leading-tight mb-8">
 
             Invest Today <br />
 
@@ -38,14 +38,15 @@ function Home() {
 
           </h1>
 
-          <p className="text-gray-300 text-lg leading-9 max-w-2xl mb-10">
+          <p className="text-gray-300 text-base md:text-lg leading-8 max-w-2xl mb-10">
 
             Premium farmland and real estate investment opportunities
-            designed for long-term growth, wealth creation, and secure futures.
+            designed for long-term growth, wealth creation,
+            and secure futures.
 
           </p>
 
-          <button className="bg-[#d4a24c] text-black px-8 py-4 rounded-full text-lg font-semibold hover:scale-105 transition">
+          <button className="bg-[#d4a24c] text-black px-8 py-4 rounded-full text-lg font-semibold hover:scale-105 transition duration-300">
 
             Explore Properties
 
@@ -57,13 +58,13 @@ function Home() {
 
       {/* Features Section */}
 
-      <div className="relative z-20 -mt-10 px-6 md:px-20 pb-20">
+      <div className="relative z-20 mt-[-60px] px-6 md:px-20 pb-20">
 
-        <div className="grid md:grid-cols-4 gap-8 bg-[#0b2b20] border border-[#d4a24c]/20 rounded-[35px] p-10 shadow-2xl">
+        <div className="grid md:grid-cols-4 gap-8 bg-[#06281d] border border-[#d4a24c]/20 rounded-[35px] p-8 shadow-2xl">
 
           <div>
 
-            <h2 className="text-[#d4a24c] text-2xl mb-4">
+            <h2 className="text-[#f5d06f] text-2xl mb-4">
 
               Premium Farmlands
 
@@ -79,7 +80,7 @@ function Home() {
 
           <div>
 
-            <h2 className="text-[#d4a24c] text-2xl mb-4">
+            <h2 className="text-[#f5d06f] text-2xl mb-4">
 
               Expert Guidance
 
@@ -95,7 +96,7 @@ function Home() {
 
           <div>
 
-            <h2 className="text-[#d4a24c] text-2xl mb-4">
+            <h2 className="text-[#f5d06f] text-2xl mb-4">
 
               Safe Investment
 
@@ -111,7 +112,7 @@ function Home() {
 
           <div>
 
-            <h2 className="text-[#d4a24c] text-2xl mb-4">
+            <h2 className="text-[#f5d06f] text-2xl mb-4">
 
               Wealth Creation
 
