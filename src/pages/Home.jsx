@@ -1,337 +1,135 @@
-import farm from "../assets/farm.jpg"
-
 function Home() {
 
   return (
 
-    <>
+    <div className="bg-[#021b12] text-white min-h-screen overflow-hidden">
 
-      {/* HERO SECTION */}
-      <section
-        className="relative min-h-[120vh] bg-cover bg-center overflow-hidden"
-        style={{
-          backgroundImage: `
-            linear-gradient(
-              rgba(0,0,0,0.35),
-              rgba(0,0,0,0.35)
-            ),
-            url(${farm})
-          `
-        }}
-      >
+      {/* Hero Section */}
 
-        {/* Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-r from-[#021b12]/95 via-[#021b12]/65 to-transparent">
+      <div className="relative min-h-screen pt-28 flex items-center px-10 md:px-20">
 
-          {/* Main Content */}
-          <div className="max-w-7xl mx-auto min-h-[120vh] flex items-center px-12 pt-40">
+        {/* Background Overlay */}
 
-            {/* Left Content */}
-            <div className="max-w-2xl text-white">
+        <div className="absolute inset-0 bg-black/50 z-0"></div>
 
-              <p className="text-[#d4a24c] tracking-[5px] mb-6 text-lg">
+        {/* Background Image */}
 
-                PREMIUM FARMLAND INVESTMENTS
+        <img
+          src="https://images.unsplash.com/photo-1506744038136-46273834b3fb"
+          alt="Farmland"
+          className="absolute inset-0 w-full h-full object-cover"
+        />
 
-              </p>
+        {/* Hero Content */}
 
-              <h1 className="text-6xl leading-[0.95] font-semibold mb-8">
+        <div className="relative z-10 max-w-4xl">
 
-                INVEST IN EARTH,
-                <br />
-                GROW YOUR WORTH.
+          <p className="text-[#f5d06f] tracking-[6px] text-lg mb-6 font-semibold">
 
-              </h1>
+            MR FARMLAND ADVISORIES
 
-              <div className="w-36 h-0.5 bg-[#d4a24c] mb-8"></div>
+          </p>
 
-              <p className="text-xl leading-10 text-gray-200 mb-12">
+          <h1 className="text-5xl md:text-7xl font-semibold leading-tight mb-8">
 
-                MR Farmland Advisories helps you discover premium
-                agricultural and investment lands with trusted guidance,
-                clear documentation and high long-term returns.
+            Invest Today <br />
 
-              </p>
+            Secure Tomorrow
 
-              {/* Buttons */}
-              <div className="flex gap-6">
+          </h1>
 
-                <button className="bg-[#c89b3c] text-black px-10 py-4 rounded-full text-lg font-semibold hover:bg-[#d4a24c] transition">
+          <p className="text-gray-300 text-lg leading-9 max-w-2xl mb-10">
 
-                  Explore Premium Lands
+            Premium farmland and real estate investment opportunities
+            designed for long-term growth, wealth creation, and secure futures.
 
-                </button>
+          </p>
 
-                <button className="border border-[#d4a24c] text-white px-10 py-4 rounded-full text-lg hover:bg-[#d4a24c] hover:text-black transition">
+          <button className="bg-[#d4a24c] text-black px-8 py-4 rounded-full text-lg font-semibold hover:scale-105 transition">
 
-                  Watch Video
+            Explore Properties
 
-                </button>
-
-              </div>
-
-            </div>
-
-          </div>
+          </button>
 
         </div>
 
-        {/* Right Floating Card */}
-        <div className="absolute right-16 top-[45%] -translate-y-1/2">
+      </div>
 
-          <div className="bg-[#021b12]/55 backdrop-blur-md border border-[#c89b3c]/40 rounded-[35px] p-10 w-[330px] text-white shadow-2xl">
+      {/* Features Section */}
 
-            {/* Item 1 */}
-            <div className="border-b border-[#c89b3c]/30 pb-8 mb-8">
+      <div className="relative z-20 -mt-10 px-6 md:px-20 pb-20">
 
-              <h3 className="text-3xl text-[#d4a24c] mb-4">
+        <div className="grid md:grid-cols-4 gap-8 bg-[#0b2b20] border border-[#d4a24c]/20 rounded-[35px] p-10 shadow-2xl">
 
-                Trusted Advisory
-
-              </h3>
-
-              <p className="text-gray-300 leading-9">
-
-                Verified investment opportunities with complete transparency.
-
-              </p>
-
-            </div>
-
-            {/* Item 2 */}
-            <div className="border-b border-[#c89b3c]/30 pb-8 mb-8">
-
-              <h3 className="text-3xl text-[#d4a24c] mb-4">
-
-                Clear Documentation
-
-              </h3>
-
-              <p className="text-gray-300 leading-9">
-
-                Legally verified properties with secure investment guidance.
-
-              </p>
-
-            </div>
-
-            {/* Item 3 */}
-            <div>
-
-              <h3 className="text-3xl text-[#d4a24c] mb-4">
-
-                High Returns
-
-              </h3>
-
-              <p className="text-gray-300 leading-9">
-
-                Strategically selected properties with future appreciation.
-
-              </p>
-
-            </div>
-
-          </div>
-
-        </div>
-
-        {/* Bottom Feature Strip */}
-        <div className="absolute bottom-0 left-0 w-full bg-[#021b12]/95 border-t border-[#c89b3c]/20">
-
-          <div className="max-w-7xl mx-auto grid grid-cols-4 gap-10 px-12 py-10 text-white">
-
-            {/* Item 1 */}
-            <div className="border-r border-[#c89b3c]/20 pr-8">
-
-              <h3 className="text-[#d4a24c] text-2xl mb-3">
-
-                Premium Farmlands
-
-              </h3>
-
-              <p className="text-gray-300 leading-8">
-
-                Carefully selected high potential agricultural and investment lands.
-
-              </p>
-
-            </div>
-
-            {/* Item 2 */}
-            <div className="border-r border-[#c89b3c]/20 pr-8">
-
-              <h3 className="text-[#d4a24c] text-2xl mb-3">
-
-                Expert Guidance
-
-              </h3>
-
-              <p className="text-gray-300 leading-8">
-
-                End-to-end support from property selection to documentation.
-
-              </p>
-
-            </div>
-
-            {/* Item 3 */}
-            <div className="border-r border-[#c89b3c]/20 pr-8">
-
-              <h3 className="text-[#d4a24c] text-2xl mb-3">
-
-                Safe Investment
-
-              </h3>
-
-              <p className="text-gray-300 leading-8">
-
-                Transparent deals with legal clarity and investment security.
-
-              </p>
-
-            </div>
-
-            {/* Item 4 */}
-            <div>
-
-              <h3 className="text-[#d4a24c] text-2xl mb-3">
-
-                Wealth Creation
-
-              </h3>
-
-              <p className="text-gray-300 leading-8">
-
-                Build long-term wealth with appreciating land assets.
-
-              </p>
-
-            </div>
-
-          </div>
-
-        </div>
-
-      </section>
-
-      {/* ABOUT SECTION */}
-      <section className="bg-[#021b12] py-28 px-12">
-
-        <div className="max-w-7xl mx-auto grid grid-cols-2 gap-20 items-center">
-
-          {/* Left Side */}
           <div>
 
-            <p className="text-[#d4a24c] tracking-[5px] text-lg mb-6">
+            <h2 className="text-[#d4a24c] text-2xl mb-4">
 
-              ABOUT MR FARMLAND ADVISORIES
-
-            </p>
-
-            <h2 className="text-6xl text-white leading-tight mb-8">
-
-              Building Wealth Through
-              <br />
-              Smart Land Investments
+              Premium Farmlands
 
             </h2>
 
-            <div className="w-32 h-0.5 bg-[#d4a24c] mb-8"></div>
+            <p className="text-gray-300 leading-8">
 
-            <p className="text-gray-300 text-lg leading-10 mb-8">
-
-              MR Farmland Advisories specializes in premium farmland,
-              open plots, gated communities, and future growth investment
-              opportunities designed for long-term wealth creation.
-
-            </p>
-
-            <p className="text-gray-400 leading-9">
-
-              We help investors and families make secure real estate
-              decisions through trusted advisory services, verified
-              documentation, and strategically selected properties
-              with high appreciation potential.
+              Carefully selected high potential agricultural and investment lands.
 
             </p>
 
           </div>
 
-          {/* Right Cards */}
-          <div className="grid grid-cols-2 gap-8">
+          <div>
 
-            <div className="bg-[#0b2b20] border border-[#c89b3c]/20 rounded-3xl p-8">
+            <h2 className="text-[#d4a24c] text-2xl mb-4">
 
-              <h3 className="text-[#d4a24c] text-3xl mb-5">
+              Expert Guidance
 
-                Our Vision
+            </h2>
 
-              </h3>
+            <p className="text-gray-300 leading-8">
 
-              <p className="text-gray-300 leading-8">
+              End-to-end support from property selection to documentation.
 
-                To become one of the most trusted real estate and farmland advisory brands.
+            </p>
 
-              </p>
+          </div>
 
-            </div>
+          <div>
 
-            <div className="bg-[#0b2b20] border border-[#c89b3c]/20 rounded-3xl p-8">
+            <h2 className="text-[#d4a24c] text-2xl mb-4">
 
-              <h3 className="text-[#d4a24c] text-3xl mb-5">
+              Safe Investment
 
-                Our Mission
+            </h2>
 
-              </h3>
+            <p className="text-gray-300 leading-8">
 
-              <p className="text-gray-300 leading-8">
+              Transparent deals with legal clarity and investment security.
 
-                Helping customers build wealth through secure land investments.
+            </p>
 
-              </p>
+          </div>
 
-            </div>
+          <div>
 
-            <div className="bg-[#0b2b20] border border-[#c89b3c]/20 rounded-3xl p-8">
+            <h2 className="text-[#d4a24c] text-2xl mb-4">
 
-              <h3 className="text-[#d4a24c] text-3xl mb-5">
+              Wealth Creation
 
-                Verified Properties
+            </h2>
 
-              </h3>
+            <p className="text-gray-300 leading-8">
 
-              <p className="text-gray-300 leading-8">
+              Build long-term wealth with appreciating land assets.
 
-                Legally verified projects with transparent documentation.
-
-              </p>
-
-            </div>
-
-            <div className="bg-[#0b2b20] border border-[#c89b3c]/20 rounded-3xl p-8">
-
-              <h3 className="text-[#d4a24c] text-3xl mb-5">
-
-                Investor Support
-
-              </h3>
-
-              <p className="text-gray-300 leading-8">
-
-                End-to-end guidance from property selection to investment planning.
-
-              </p>
-
-            </div>
+            </p>
 
           </div>
 
         </div>
 
-      </section>
+      </div>
 
-    </>
+    </div>
 
   )
 }

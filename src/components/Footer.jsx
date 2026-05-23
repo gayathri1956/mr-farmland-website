@@ -1,99 +1,55 @@
+import logo from "../assets/logo.jpeg"
+
 function Footer() {
 
   return (
 
-    <footer className="bg-black text-white pt-20 pb-10 px-10 border-t border-[#c89b3c]/20">
+    <footer className="bg-[#021b12] text-white py-12 px-6 border-t border-[#d4a24c]/20">
 
-      <div className="max-w-7xl mx-auto grid md:grid-cols-4 gap-12">
+      <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-10">
 
-        {/* Company */}
-        <div>
+        {/* Left */}
 
-          <h2 className="text-3xl text-[#d4a24c] mb-6">
+        <div className="flex flex-col items-center md:items-start">
 
-            MR Farmland
+          <img
+            src={logo}
+            alt="MR Farmland Advisories"
+            className="h-20 object-contain rounded-lg mb-4"
+          />
+
+        </div>
+
+        {/* Right */}
+
+        <div className="text-center md:text-right">
+
+          <h2 className="text-[#f5d06f] text-3xl font-semibold mb-3">
+
+            MR FARMLAND ADVISORIES
 
           </h2>
 
-          <p className="text-gray-400 leading-8">
+          <p className="text-gray-300 mb-2">
 
-            Trusted real estate and farmland investment advisory
-            helping investors build secure and future-focused assets.
+            Your Trusted Farmland Investment Partner.
+
+          </p>
+
+          <p className="text-gray-400 max-w-xl">
+
+            Premium farmland investments, open plots,
+            and secure real estate opportunities.
+
+          </p>
+
+          <p className="text-gray-500 mt-5 text-sm">
+
+            © 2026 MR Farmland Advisories. All Rights Reserved.
 
           </p>
 
         </div>
-
-        {/* Quick Links */}
-        <div>
-
-          <h2 className="text-2xl text-[#d4a24c] mb-6">
-
-            Quick Links
-
-          </h2>
-
-          <ul className="space-y-4 text-gray-400">
-
-            <li>Home</li>
-            <li>About</li>
-            <li>Services</li>
-            <li>Properties</li>
-            <li>Investment Guide</li>
-            <li>Contact</li>
-
-          </ul>
-
-        </div>
-
-        {/* Services */}
-        <div>
-
-          <h2 className="text-2xl text-[#d4a24c] mb-6">
-
-            Services
-
-          </h2>
-
-          <ul className="space-y-4 text-gray-400">
-
-            <li>Farmland Investments</li>
-            <li>Open Plot Ventures</li>
-            <li>Real Estate Advisory</li>
-            <li>Documentation Support</li>
-            <li>Investment Planning</li>
-
-          </ul>
-
-        </div>
-
-        {/* Contact */}
-        <div>
-
-          <h2 className="text-2xl text-[#d4a24c] mb-6">
-
-            Contact
-
-          </h2>
-
-          <div className="space-y-4 text-gray-400">
-
-            <p>+91 9959753136</p>
-
-            <p>mr@mrfarmlandadvisories.co.in</p>
-
-            <p>www.mrfarmlandadvisories.co.in</p>
-
-          </div>
-
-        </div>
-
-      </div>
-
-      {/* Bottom */}
-      <div className="border-t border-[#c89b3c]/20 mt-16 pt-8 text-center text-gray-500">
-
-        © 2026 MR Farmland Advisories. All Rights Reserved.
 
       </div>
 

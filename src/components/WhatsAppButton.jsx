@@ -14,10 +14,14 @@ function WhatsAppButton() {
         {/* Pulse Animation */}
         <span className="absolute inline-flex h-16 w-16 rounded-full bg-green-500 opacity-75 animate-ping"></span>
 
-        {/* Button */}
-        <div className="relative bg-green-500 hover:bg-green-600 text-white w-16 h-16 rounded-full flex items-center justify-center text-3xl shadow-2xl transition duration-300">
+        {/* WhatsApp Button */}
+        <div className="relative bg-white hover:scale-110 transition duration-300 w-16 h-16 rounded-full flex items-center justify-center shadow-2xl">
 
-          🟢
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
+            alt="WhatsApp"
+            className="w-9 h-9"
+          />
 
         </div>
 
