@@ -6,7 +6,7 @@ function Home() {
 
       {/* Hero Section */}
 
-      <div className="relative min-h-screen pt-40 flex items-center px-6 md:px-20">
+      <div className="relative min-h-screen flex items-center px-6 md:px-20 pt-40 pb-32">
 
         {/* Background Image */}
 
@@ -16,11 +16,11 @@ function Home() {
           className="absolute inset-0 w-full h-full object-cover"
         />
 
-        {/* Dark Overlay */}
+        {/* Overlay */}
 
         <div className="absolute inset-0 bg-black/60"></div>
 
-        {/* Content */}
+        {/* Hero Content */}
 
         <div className="relative z-10 max-w-4xl">
 
@@ -58,9 +58,9 @@ function Home() {
 
       {/* Features Section */}
 
-      <div className="relative z-20 mt-[-60px] px-6 md:px-20 pb-20">
+      <div className="px-6 md:px-20 pb-20 -mt-16 relative z-20">
 
-        <div className="grid md:grid-cols-4 gap-8 bg-[#06281d] border border-[#d4a24c]/20 rounded-[35px] p-8 shadow-2xl">
+        <div className="grid md:grid-cols-4 gap-8 bg-[#06281d] border border-[#d4a24c]/20 rounded-[35px] p-10 shadow-2xl">
 
           <div>
 
